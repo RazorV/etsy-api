@@ -1,0 +1,46 @@
+{
+  "name": "etsy",
+  "version": "0.0.1",
+  "description": "PDF merge and format app",
+  "author": "Wetelo, Inc",
+  "main": "index-old.js",
+  "private": false,
+  "apidoc": {
+    "title": "Short API documentation",
+    "version": "0.0.1",
+    "description": "apiDoc for PDF merge"
+  },
+  "engines": {
+    "node": ">=11.14.0"
+  },
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "node",
+    "node.js"
+  ],
+  "nodemonConfig": {
+    "ignore": [
+      "token/*",
+      "node_modules/*"
+    ]
+  },
+  "dependencies": {
+    "async": "^2.6.2",
+    "cookie-parser": "~1.4.4",
+    "express": "~4.16.4",
+    "express-session": "^1.16.1",
+    "moment": "^2.24.0",
+    "node-cron": "^2.0.3",
+    "oauth": "^0.9.15"
+  },
+  "devDependencies": {
+    "apidoc": "~0.17.7",
+    "eslint": "~5.16.0",
+    "eslint-plugin-node": "~8.0.1",
+    "nodemon": "~1.18.11"
+  },
+  "license": "MIT"
+}
