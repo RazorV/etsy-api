@@ -1,14 +1,14 @@
 {
   "name": "etsy",
   "version": "0.0.1",
-  "description": "PDF merge and format app",
+  "description": "Etsy shop API example",
   "author": "Wetelo, Inc",
-  "main": "index-old.js",
+  "main": "index.js",
   "private": false,
   "apidoc": {
     "title": "Short API documentation",
-    "version": "0.0.1",
-    "description": "apiDoc for PDF merge"
+    "version": "0.0.0",
+    "description": "apiDoc for Etsy API testing"
   },
   "engines": {
     "node": ">=11.14.0"

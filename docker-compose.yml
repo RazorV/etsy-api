@@ -2,11 +2,18 @@ version: '2'
 services:
   etsy:
     build: .
-    command: npm run dev
+    command: /bin/sh -c "npm i && npm run dev"
+    environment:
+      PORT: 4444
+      API_KEY: e2zn74oyfcchzz690geo7w7o
+      API_SECRET: xa0iu1flo3
+      SHOP_ID: 20094949
     ports:
       - '4444:4444'
     volumes:
       - .:/app
       - ./token:/app/token
+      - ./node_modules:/app/node_modules
 volumes:
   token:
+  node_modules:
